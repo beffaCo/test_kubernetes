@@ -6,4 +6,4 @@ RUN pip install -r requirements.txt
 EXPOSE 8888
 
 # Run the app with Gunicorn
-CMD python app.py #[ "gunicorn", "-b 0.0.0.0:8888", "app:server"]
+CMD gunicorn -b 0.0.0.0:8888 app:server
