@@ -10,7 +10,7 @@ server = app.server
 
 app.layout = html.Div(
     [
-        html.H1("Welcome to the example dashboard"),
+        html.H1("Welcome to the example dashboard: New deployment."),
         html.Div("This dashboard will be deployed on kubernetes")
     ]
 )
