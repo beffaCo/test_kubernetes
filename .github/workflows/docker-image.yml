@@ -52,7 +52,7 @@ jobs:
 
       - name: Build the Docker image
         run: |
-          docker build -t ghcr.io/beffaco/test_kubernetes:${{ steps.tagname.outputs.timestamp }} #:latest . #${{ steps.date.outputs.date }} .
+          docker build -t ghcr.io/beffaco/test_kubernetes:${{ steps.tagname.outputs.timestamp }} . #:latest . #${{ steps.date.outputs.date }} .
 
       - name: Push the Docker image
         run: |
