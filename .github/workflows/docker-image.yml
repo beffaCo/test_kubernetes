@@ -52,7 +52,7 @@ jobs:
 
       - name: Build the Docker image
         run: |
-          docker build --platform linux/arm64,linux/amd64\ -t ghcr.io/beffaco/test_kubernetes:latest .
+          docker buildx build --platform linux/arm64,linux/amd64\ -t ghcr.io/beffaco/test_kubernetes:latest .
 
       - name: Push the Docker image
         run: |
